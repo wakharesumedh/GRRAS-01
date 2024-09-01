@@ -3,6 +3,9 @@ pipeline{
         triggers {
 	  pollSCM '* * * * *'
 	}
+	environment{
+		JAVA_HOME = /home/sumedh/Downloads/jdk-11.0.24
+	}
 
 		stages{
 			stage(checkout){
