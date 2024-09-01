@@ -24,7 +24,9 @@ triggers {
                 sh 'cp target/GRRAS-01.war /home/sumedh/Downloads/apache-tomcat-9.0.93/webapps'
             }
         stage ('NOTIFICATION'){
-            slackSend baseUrl: 'https://hooks.slack.com/services/', channel: '#devops-notification', color: 'good', message: 'Welocme to jenkins slack world', teamDomain: 'Sumedh', tokenCredentialId: 'slack'
+            steps{
+                slackSend baseUrl: 'https://hooks.slack.com/services/', channel: '#devops-notification', color: 'good', message: 'Welocme to jenkins slack world', teamDomain: 'Sumedh', tokenCredentialId: 'slack'
+            }
         }
             
         }
