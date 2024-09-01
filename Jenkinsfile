@@ -7,7 +7,7 @@ pipeline{
 		stages{
 			stage(checkout){
 				steps{
-					git 'git \'https://github.com/wakharesumedh/GRRAS-01.git\''
+				checkout scm
 				}
 			}
 			stage(bulid){
