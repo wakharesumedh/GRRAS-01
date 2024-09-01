@@ -12,7 +12,7 @@ pipeline{
 			}
 			stage(bulid){
 				steps{
-					build 'mvn install'
+					sh 'cp/home/sumedh/Downloads/apache-maven-3.9.8/bin/mvn install'
 				}
 			}
 			stage(deploy){
