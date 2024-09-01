@@ -21,7 +21,7 @@ triggers {
         }
         stage('DEPLOYMENT'){
             steps{
-                sh 'cp target/CROCS.war /home/sumedh/Downloads/apache-tomcat-9.0.93/webapps'
+                sh 'cp target/GRRAS-01.war /home/sumedh/Downloads/apache-tomcat-9.0.93/webapps'
             }
         }
     }
